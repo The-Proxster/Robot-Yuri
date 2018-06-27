@@ -1,0 +1,15 @@
+{
+  "name": "YuriBot",
+  "version": "1.0.0",
+  "description": "a YuriBot",
+  "main": "Yuri.js",
+  "scripts": {
+    "start": "node Yuri.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.2.1"
+  },
+  "devDependencies": {}
+}
