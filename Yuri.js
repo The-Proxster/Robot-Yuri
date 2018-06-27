@@ -147,4 +147,9 @@ client.on('message', msg => {
 		msg.reply('**NO U**');
 	}
 });
+client.on('message', msg => {
+	if (msg.content === 'ur mum gae') {
+		msg.reply('**NO U**');
+	}
+});
 client.login(process.env.BOT_TOKEN);
