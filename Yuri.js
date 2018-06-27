@@ -142,4 +142,9 @@ client.on('message', msg => {
 		msg.reply(haHA);
 	}
 });
+client.on('message', msg => {
+	if (msg.content === 'ur mom gay') {
+		msg.reply('**NO U**');
+	}
+});
 client.login(process.env.BOT_TOKEN);
