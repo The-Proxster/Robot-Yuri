@@ -160,7 +160,7 @@ client.on('message', msg => {
 	}
 });
 client.on('message', msg => {
-	if (msg.content === tWord) {
+	if ((msg.content === tWord)) {
 		msg.reply('Why do you use such words?');
 	}
 });
