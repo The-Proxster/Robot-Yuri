@@ -28,7 +28,7 @@ bot.on('guildMemberAdded', member => {
 });
 client.on('message', msg => {
 	if (msg.content === 'Y!cmds') {
-		msg.reply('Ok! Here is a list of commands. Y!help, Y!test, Y!cmds, Y!kiss,Y!meme,Y!ping,Y!hug,Y!uptime,Y!dokiname,Y!poems,Y!ping.');
+		msg.reply('Ok! Here is a list of commands. Y!help, Y!test, Y!cmds, Y!kiss,Y!meme,Y!ping,Y!hug,Y!uptime,Y!dokiname,Y!poems,Y!ping,Y!invite.');
 	}
 });
 client.on('message', msg => {
