@@ -33,7 +33,7 @@ client.on('message', msg => {
 });
 client.on('message', msg => {
 	if (msg.content === 'Y!ping') {
-		msg.reply(`:ping_pong: Pong! your ping is \`${client.pings[0]}ms\``);
+		msg.reply(`:ping_pong: Pong! *your ping is* \`${client.pings[0]}ms\``);
 	}
 });
 client.on('message', msg => {
