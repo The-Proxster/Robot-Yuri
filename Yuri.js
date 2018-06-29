@@ -126,7 +126,7 @@ client.on('message', msg => {
 });
 client.on('message', msg => {
 	if (msg.content === 'Y!invite') {
-		msg.author.sendMessage('Hello! Im YuriBot, you have used the invitation command! So heres my invite link. https://discordapp.com/api/oauth2/authorize?client_id=409069320480620554&permissions=0&scope=bot enjoy!)
+		msg.author.sendMessage('Hello! Im YuriBot, you have used the invitation command! So heres my invite link. https://discordapp.com/api/oauth2/authorize?client_id=409069320480620554&permissions=0&scope=bot enjoy!')
 	}
 });
 client.login(process.env.BOT_TOKEN);
