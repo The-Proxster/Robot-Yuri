@@ -33,7 +33,7 @@ client.on('message', msg => {
 });
 client.on('message', message => {
     if(msg.content === 'Y!ping') {
-		msg.channel.send('ping' + client.ping)
+		msg.channel.send(client.ping)
     }
 });
 client.on('message', msg => {
