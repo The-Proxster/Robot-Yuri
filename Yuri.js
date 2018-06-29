@@ -31,10 +31,10 @@ client.on('message', msg => {
 		msg.reply('Ok! Here is a list of commands. Y!help, Y!test, Y!cmds, Y!kiss,Y!meme,Y!ping,Y!hug,Y!uptime,Y!dokiname,Y!poems.');
 	}
 });
-client.on('message', msg => {
-	if (msg.content === 'Y!ping') {
-		msg.reply('**MEGA SMASH** oh I mean *pong*');
-	}
+client.on('message', message => {
+    if(msg.content === 'Y!ping') {
+            message.channel.send('Pong!'new Date().getTime() - message.createdTimestamp + " ms");        
+    }
 });
 client.on('message', msg => {
 	if (msg.content === 'Yuri sucks') {
