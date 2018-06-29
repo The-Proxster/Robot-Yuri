@@ -38,7 +38,7 @@ client.on('message', msg => {
 });
 client.on('message', msg => {
 	if (msg.content === 'Yuri sucks') {
-		if (message.guild.id !== '264445053596991498') {
+		if (message.guild.id !== '264445053596991498')
 			return;
 		msg.reply('No');
 		msg.delete()
@@ -52,7 +52,7 @@ client.on('message', msg => {
 });
 client.on('message', msg => {
 	if (msg.content === 'yuri sucks') {
-		if (message.guild.id !== '264445053596991498') {
+		if (message.guild.id !== '264445053596991498')
 			return;
 		msg.reply('You have said the forbidden phrase!');
 		msg.delete()
@@ -60,14 +60,14 @@ client.on('message', msg => {
 });
 client.on('message', msg => {
 	if (msg.content === 'yuri is worst girl') {
-		if (message.guild.id !== '264445053596991498') {
+		if (message.guild.id !== '264445053596991498')
 			return;
 		msg.reply('No, im not!');
 	}
 });
 client.on('message', msg => {
 	if (msg.content === 'Y!kiss') {
-		if (message.guild.id !== '264445053596991498') {
+		if (message.guild.id !== '264445053596991498')
 			return;
 		msg.reply('Oh You! *kisses*');
 	}
@@ -95,49 +95,49 @@ client.on('message', msg => {
 });
 client.on('message', msg => {
 	if (msg.content === 'Hey yuri do you like knifes?') {
-		if (message.guild.id !== '264445053596991498') {
+		if (message.guild.id !== '264445053596991498')
 			return;
 		msg.reply('~~**YES**~~ oh I mean. Yes I do. But I like you more!~');
 	}
 });
 client.on('message', msg => {
 	if (msg.content === 'Hello Yuri') {
-		if (message.guild.id !== '264445053596991498') {
+		if (message.guild.id !== '264445053596991498')
 			return;
 		msg.reply('Hello!~');
 	}
 });
 client.on('message', msg => {
 	if (msg.content === 'Do you love me yuri?') {
-		if (message.guild.id !== '264445053596991498') {
+		if (message.guild.id !== '264445053596991498')
 			return;
 		msg.reply('Well of course I do! Unless your a **FILTHY** Thotika Lover');
 	}
 });
 client.on('message', msg => {
 	if (msg.content === 'y_act2') {
-		if (message.guild.id !== '264445053596991498') {
+		if (message.guild.id !== '264445053596991498')
 			return;
 		msg.reply('*slap* Stop being bulli to OG yuri. before I hang you.');
 	}
 });
 client.on('message', msg => {
 	if (msg.content === 'Hey! Stop acting like a meanie!') {
-		if (message.guild.id !== '264445053596991498') {
+		if (message.guild.id !== '264445053596991498')
 			return;
 		msg.reply('Shut up sayori!');
 	}
 });
 client.on('message', msg => {
 	if (msg.content === 'Ha, ha. Funny. Can you sense my sarcasm?') {
-		if (message.guild.id !== '264445053596991498') {
+		if (message.guild.id !== '264445053596991498')
 			return;
 		msg.reply('No, really I cannot.');
 	}
 });
 client.on('message', msg => {
 	if (msg.content === 'I thought we were better than this...') {
-		if (message.guild.id !== '264445053596991498') {
+		if (message.guild.id !== '264445053596991498')
 			return;
 		msg.reply('No,**WE** were never a thing!');
 	}
@@ -167,14 +167,14 @@ client.on('message', msg => {
 });
 client.on('message', msg => {
 	if (msg.content === 'ur mom gay') {
-		if (message.guild.id !== '264445053596991498') {
+		if (message.guild.id !== '264445053596991498')
 			return;
 		msg.reply('**NO U**');
 	}
 });
 client.on('message', msg => {
 	if (msg.content === 'ur mum gae') {
-		if (message.guild.id !== '264445053596991498') {
+		if (message.guild.id !== '264445053596991498')
 			return;
 		msg.reply('**NO U**');
 	}
