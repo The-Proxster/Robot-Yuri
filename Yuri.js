@@ -33,8 +33,7 @@ client.on('message', msg => {
 });
 client.on('message', message => {
     if(msg.content === 'Y!ping') {
-		var png1 = new Date().getTime() - message.createdTimestamp + 'ms'
-            msg.reply('pong' + png1);        
+		msg.channel.send('ping' + client.ping)
     }
 });
 client.on('message', msg => {
