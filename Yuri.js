@@ -124,4 +124,9 @@ client.on('message', msg => {
 		msg.reply(poem);
 	}
 });
+client.on('message', msg => {
+	if (msg.content === 'Y!dmtest') {
+		msg.author.sendMessage('Test')
+	}
+});
 client.login(process.env.BOT_TOKEN);
