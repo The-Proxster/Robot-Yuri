@@ -131,8 +131,9 @@ client.on('message', msg => {
 });
 client.on('message', msg => {
 	if (msg.content === 'Y!embedtest') {
-		msg.channel.send({embed: {
-		color 3447003,
-		description: 'Embed Test! :wave:'
-	 }});
+		var embed = new Discord.RichEmbed()
+		.setDescription('Hello, this is an embed test! :wave:');
+		message.channel.sendEmbed(embed);
+	}
+});
 client.login(process.env.BOT_TOKEN);
