@@ -133,7 +133,7 @@ client.on('message', msg => {
 client.on('message', msg => {
 	if (msg.content === 'Y!botinfo') {
 		var embed = new Discord.RichEmbed()
-		.addField ('Hello, im yuribot', 'my creator is' + creator);
+		.addField ('Hello, im yuribot', 'my creator is ' + creator);
 		msg.channel.sendEmbed(embed);
 	}
 });
