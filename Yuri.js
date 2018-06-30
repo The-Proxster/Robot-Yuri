@@ -134,8 +134,5 @@ client.on('message', msg => {
 		msg.channel.send({embed: {
 		color 3447003,
 		description: 'Embed Test! :wave:'
-		}
-	}
-});
-
+	 }});
 client.login(process.env.BOT_TOKEN);
