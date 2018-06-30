@@ -129,4 +129,13 @@ client.on('message', msg => {
 		msg.author.sendMessage('Hello! Im YuriBot, you have used the invitation command! So heres my invite link. https://discordapp.com/api/oauth2/authorize?client_id=409069320480620554&permissions=0&scope=bot enjoy!')
 	}
 });
+client.on('message', msg => {
+	if (msg.content === 'Y!embedtest') {
+		msg.channel.send({embed: {
+		color 3447003,
+		description: 'Embed Test! :wave:'
+		}
+	}
+});
+
 client.login(process.env.BOT_TOKEN);
