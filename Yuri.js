@@ -135,7 +135,6 @@ client.on('message', msg => {
 		var embed = new Discord.RichEmbed()
 		.addField ('Hello, im yuribot', 'my creator is' + creator);
 		msg.channel.sendEmbed(embed);
-		break;
 	}
 });
 client.login(process.env.BOT_TOKEN);
