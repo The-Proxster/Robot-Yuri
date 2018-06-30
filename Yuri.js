@@ -133,7 +133,7 @@ client.on('message', msg => {
 	if (msg.content === 'Y!embedtest') {
 		var embed = new Discord.RichEmbed()
 		.setDescription('Hello, this is an embed test! :wave:');
-		message.channel.sendEmbed(embed);
+		msg.channel.sendEmbed(embed);
 	}
 });
 client.login(process.env.BOT_TOKEN);
