@@ -16,7 +16,9 @@ client.on("ready", () => {
 });
 client.on('message', msg => {
   if (msg.content === 'Y!help') {
-    msg.reply('Hello! Im YuriBot, im still being made but I still love you. I just have to have some more work done! if you need help on commands do Y!cmds.');
+	var embed3 = new Discord.RichEmbed()
+	.addField ('Hi! im YuriBot for commands use Y!cmds', 'For help please message/ping OhYeahYuri/OhYeahMrKrabs for help!')
+	msg.channel.sendEmbed(embed3);
   }
 });
 client.on('message', msg => {
