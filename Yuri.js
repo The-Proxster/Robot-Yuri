@@ -29,7 +29,18 @@ bot.on('guildMemberAdded', member => {
 });
 client.on('message', msg => {
 	if (msg.content === 'Y!cmds') {
-		msg.reply('Ok! Here is a list of commands. Y!help, Y!test, Y!cmds, Y!kiss,Y!meme,Y!ping,Y!hug,Y!uptime,Y!dokiname,Y!poems,Y!ping,Y!invite.');
+		var embed2 = new Discord.RichEmbed()
+		.addField ('Y!help', 'This gives the help command (referes to this command)')
+		.addField ('Y!ping', 'Gives your ping (internet speed)')
+		.addField ('Y!meme', 'Drops a random meme')
+		.addField ('Y!kiss', 'Have yuri kiss you! <3')
+		.addField ('Y!purge', 'Self-explanatory')
+		.addField ('Y!uptime', 'See how lonf I have been online!')
+		.addField ('Y!invite', 'Invite me to YOUR server!')
+		.addField ('Y!dokiname', 'I will say one of the dokis name')
+		.addField ('Y!poems', 'I will say one of my poems')
+		.addField ('Y!botinfo', 'Not exactly finished just yet')
+		msg.channel.sendEmbed(embed2);
 	}
 });
 client.on('message', msg => {
