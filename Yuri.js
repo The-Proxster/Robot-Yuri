@@ -38,7 +38,7 @@ client.on('message', msg => {
 		.addField ('Y!meme', 'Drops a random meme')
 		.addField ('Y!kiss', 'Have yuri kiss you! <3')
 		.addField ('Y!purge', 'Self-explanatory')
-		.addField ('Y!uptime', 'See how lonf I have been online!')
+		.addField ('Y!uptime', 'See how long I have been online!')
 		.addField ('Y!invite', 'Invite me to YOUR server!')
 		.addField ('Y!dokiname', 'I will say one of the dokis name')
 		.addField ('Y!poems', 'I will say one of my poems')
