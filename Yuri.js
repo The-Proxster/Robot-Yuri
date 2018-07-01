@@ -149,11 +149,19 @@ client.on('message', msg => {
 	}
 });
 client.on('message', msg => {
-	if (!msg.content.startsWith(PREFIX + 'restart')) return;
+	if (!msg.content.startsWith(PREFIX + 'restart2')) return;
+	if (msg.author.id === '235511644682321922') { 
 	resetBot(msg.channel);
 			function resetBot(channel) {
-			channel.send('`RESTARTING!!!` it could take a little before im online again')
+			channel.send('RESTARTING!...')
 			.then(msg => client.destroy())
 			}
-});
+		}
+		else {
+			if (msg.author.id !== '235511644682321922') { 
+			msg.channel.send('you are not the creator!')
+			return
+			}
+		}
+	});
 client.login(process.env.BOT_TOKEN);
