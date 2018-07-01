@@ -18,6 +18,7 @@ client.on('message', msg => {
   if (msg.content === 'Y!help') {
 	var embed3 = new Discord.RichEmbed()
 	.addField ('Hi! im YuriBot for commands use Y!cmds', 'For help please message/ping OhYeahYuri/OhYeahMrKrabs for help!')
+	.setColor(0xEE82EE)
 	msg.channel.sendEmbed(embed3);
   }
 });
@@ -42,6 +43,7 @@ client.on('message', msg => {
 		.addField ('Y!dokiname', 'I will say one of the dokis name')
 		.addField ('Y!poems', 'I will say one of my poems')
 		.addField ('Y!botinfo', 'Not exactly finished just yet')
+		.setColor(0xEE82EE)
 		msg.channel.sendEmbed(embed2);
 	}
 });
