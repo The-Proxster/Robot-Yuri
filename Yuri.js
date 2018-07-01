@@ -159,9 +159,8 @@ client.on('message', msg => {
 });
 client.on('message', msg => {
 	if (msg.content === 'Y!react') {
-		var haHA45 = reactions [Math.floor(Math.random()*reactions .length)];
-		msg.reply('Ok')
-		msg.react.('🤔')
+		msg.channel.send('Ok')
+		msg.react('🤔')
 	}
 });
 client.login(process.env.BOT_TOKEN);
