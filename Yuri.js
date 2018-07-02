@@ -76,15 +76,15 @@ client.on('message', msg => {
 		msg.reply('Oh You! *kisses*');
 });
 client.on('message', function(message) {
-    if (!message.content.startsWith(PREFIX + 'purge')) return;
-        if (message.member.hasPermission("MANAGE_MESSAGES")) {
-            message.channel.fetchMessages()
-               .then(function(list){
-                    message.channel.bulkDelete(list);
-                }, function(err){message.channel.send("ERROR: ERROR CLEARING CHANNEL.")})                        
-        }
-
-});
+	if (!message.content.startsWith(PREFIX + 'purge')) return;
+		if (message.member.hasPermission("MANAGE_MESSAGES")) {
+			message.channel.fetchMessages()
+				 .then(function(list){
+					message.channel.bulkDelete(list);
+					}, function(err){message.channel.send("ERROR: ERROR CLEARING CHANNEL.")})                        
+			}
+	
+	});
 client.on('message', msg => {
 	if (!msg.content.startsWith(PREFIX + 'hug')) return;
 		msg.reply('Oh uh ok! *hugs*');
@@ -149,17 +149,25 @@ client.on('message', msg => {
 	}
 });
 client.on('message', msg => {
+	var newEmbed = new Discord.RichEmbed()
+	.addField('RESTARTING', 'It might be a bit before im online again')
+	.setFooter('Requested by ' + creator + author.avatar)
+	.setColor(0xEE82EE)
 	if (!msg.content.startsWith(PREFIX + 'restart')) return;
 	if (msg.author.id === '235511644682321922') { 
 	resetBot(msg.channel);
 			function resetBot(channel) {
-			channel.send('RESTARTING!...')
+			channel.sendEmbed(newEmbed)
 			.then(msg => client.destroy())
 			}
 		}
 		else {
+			var rejectEmbed = new Discord.RichEmbed()
+			.addField ('ERROR!', 'you do not have the permission to use this command!')
+			.setFooter('Requested by ' + author + author.avatar)
+			.setColor(0xff0000)
 			if (msg.author.id !== '235511644682321922') { 
-			msg.channel.send('you are not the creator!')
+			msg.channel.sendEmbed(rejectEmbed)
 			return
 			}
 		}
