@@ -45,7 +45,7 @@ client.on('message', msg => {
 		.addField ('Y!dokiname', 'I will say one of the dokis name')
 		.addField ('Y!poems', 'I will say one of my poems')
 		.addField ('Y!botinfo', 'Not exactly finished just yet')
-		.addField ('Y!restart', 'am I glitching out/not working properly? use this to reset me!')
+		.addField ('Y!restart', 'am I glitching out/not working properly? use this to reset me! **NOTE** *Only the owner of this bot can use this command!*')
 		.setFooter(' Requested by ' + msg.author.username + ' Created by ' + creator )
 		.setColor(0xEE82EE)
 		msg.channel.sendEmbed(embed2);
@@ -149,7 +149,7 @@ client.on('message', msg => {
 	}
 });
 client.on('message', msg => {
-	if (!msg.content.startsWith(PREFIX + 'restart2')) return;
+	if (!msg.content.startsWith(PREFIX + 'restart')) return;
 	if (msg.author.id === '235511644682321922') { 
 	resetBot(msg.channel);
 			function resetBot(channel) {
