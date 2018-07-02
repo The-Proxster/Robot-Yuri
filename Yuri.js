@@ -15,7 +15,7 @@ client.on("ready", () => {
     client.user.setGame("with You! Y!help");
 });
 client.on('message', msg => {
-  if (msg.content === 'Y!help') {
+	if (!msg.content.startsWith(PREFIX + 'help')) return;
 	var embed3 = new Discord.RichEmbed()
 	.addField ('Hi! im YuriBot for commands use Y!cmds', 'For help please message/ping OhYeahYuri/OhYeahMrKrabs for help!')
 	.setFooter(' Requested by ' + msg.author.username + ' Created by ' + creator )
