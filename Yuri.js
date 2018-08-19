@@ -100,8 +100,8 @@ client.on('message', msg => {
 	}
 });
 client.on('message', msg => {
-	if (msg.content === 'Do you love me yuri?') {
-		msg.reply('Well of course I do! Unless your a **FILTHY** Thotika Lover');
+	if (msg.content === 'Do you love me Yuri?') {
+		msg.reply("Well of course I do! Unless you're a **FILTHY** Thotika Lover");
 	}
 });
 client.on('message', msg => {
@@ -150,7 +150,7 @@ client.on('message', msg => {
 });
 client.on('message', msg => {
 	var newEmbed = new Discord.RichEmbed()
-	.addField('RESTARTING', 'It might be a bit before im online again')
+	.addField('RESTARTING', 'It might be a bit before I am online again')
 	.setFooter('Requested by ' + msg.author + ' created by ' + creator)
 	.setColor(0xEE82EE)
 	if (!msg.content.startsWith(PREFIX + 'restart')) return;
